@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Voter Portal | ECI Replica</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark eci-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🗳️ Bharat Voter Portal</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Voter Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#candidate">Candidates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#myth">Myth vs Reality</a></li>
+          <li class="nav-item"><a class="nav-link" href="#press">Press</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero text-center text-white">
+    <div class="container">
+      <h1 class="fw-bold">National Voter Registration Portal</h1>
+      <p>Empowering every citizen through free and fair elections</p>
+      <a href="#services" class="btn btn-warning btn-lg mt-3">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Voter Services -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Voter Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="service-card p-3">
+            <i class="bi bi-person-plus fs-1 text-primary"></i>
+            <h5 class="mt-2">New Registration</h5>
+            <button class="btn btn-outline-primary mt-2" onclick="alert('New Voter Registration Form Coming Soon')">Apply Now</button>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-card p-3">
+            <i class="bi bi-search fs-1 text-success"></i>
+            <h5 class="mt-2">Search Your Name</h5>
+            <button class="btn btn-outline-success mt-2" onclick="alert('Search Functionality Under Development')">Search</button>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-card p-3">
+            <i class="bi bi-pencil-square fs-1 text-danger"></i>
+            <h5 class="mt-2">Correction in Details</h5>
+            <button class="btn btn-outline-danger mt-2" onclick="alert('Correction Form Coming Soon')">Edit Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Candidate Info -->
+  <section id="candidate" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Candidate / Nomination Status</h2>
+      <table class="table table-bordered text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>Candidate Name</th>
+            <th>Party</th>
+            <th>Constituency</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ravi Kumar</td><td>ABC Party</td><td>Delhi</td><td>Approved</td></tr>
+          <tr><td>Neha Singh</td><td>XYZ Party</td><td>Mumbai</td><td>Pending</td></tr>
+          <tr><td>Arjun Mehta</td><td>Independent</td><td>Lucknow</td><td>Rejected</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Myth vs Reality -->
+  <section id="myth" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Myth vs Reality</h2>
+      <div class="myth-card">
+        <p><strong>Myth:</strong> EVMs can be hacked easily.</p>
+        <p class="text-success"><strong>Reality:</strong> EVMs are completely offline and tamper-proof, making them secure and transparent.</p>
+      </div>
+      <div class="myth-card">
+        <p><strong>Myth:</strong> Once registered, you can't correct voter details.</p>
+        <p class="text-success"><strong>Reality:</strong> You can update your details anytime using the correction form.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press Section -->
+  <section id="press" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Latest Press Releases</h2>
+      <ul class="list-group">
+        <li class="list-group-item">📰 Announcement: National Voters’ Day celebration on Jan 25</li>
+        <li class="list-group-item">📢 ECI launches new digital voter ID app for all citizens</li>
+        <li class="list-group-item">📊 Voter turnout for General Elections crosses 70%</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Login / Signup -->
+  <section id="login" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Login / Sign Up</h2>
+      <div class="login-box mx-auto">
+        <input type="text" id="username" class="form-control mb-2" placeholder="Username">
+        <input type="password" id="password" class="form-control mb-2" placeholder="Password">
+        <button class="btn btn-primary w-100" onclick="login()">Login</button>
+        <p class="mt-3">Don’t have an account? <a href="#" onclick="signup()">Sign Up</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="eci-footer">
+    <p>&copy; 2025 Bharat Voter Portal | Designed for College Project</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
